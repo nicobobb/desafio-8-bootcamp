@@ -1,0 +1,253 @@
+/*  Paleta de colores
+#81b3b2 celeste
+#f9f6ef beige claro
+#e5dec3 beige
+#875e46 marron claro
+#724b34 marron oscuro
+
+*/
+
+body {
+    background-color: #81b3b2;
+    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: "Galdeano", sans-serif;
+}
+
+/*Ribbon style h1*/
+h1 {
+    width: 35%;
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #875e46;
+    color: #e5dec3;
+    text-transform: uppercase;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    width: 80px;
+    height: 100%;
+    background-color: #724b34;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+    background-image: linear-gradient(45deg, transparent 50%, #5d3922 50%);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+h1::before {
+    left: -60px;
+}
+
+h1::after {
+    right: -60px;
+    transform: scaleX(-1);
+}
+/*Ribbon style h1*/
+
+legend {
+    width: 40%;
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #875e46;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e5dec3;
+    text-transform: uppercase;
+}
+
+legend::before,
+legend::after {
+    content: "";
+    width: 80px;
+    height: 100%;
+    background-color: #724b34;
+    position: absolute;
+    top: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+    background-image: linear-gradient(45deg, transparent 50%, #5d3922 50%);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: -1;
+}
+
+legend::before {
+    left: -60px;
+}
+
+legend::after {
+    right: -60px;
+    transform: scaleX(-1);
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    width: 550px;
+    min-height: 595px;
+    margin: 20px auto;
+    background-color: #f9f6ef;
+    border-radius: 5px;
+    border: 1px solid white;
+    z-index: 0;
+}
+
+.fieldset-img3 {
+    text-align: center;
+}
+
+.center-label,
+.fieldset-img3 p {
+    color: #5d3922;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main-div {
+    width: 90%;
+    padding: 25px 0;
+    margin: auto;
+    text-align: center;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: transparent;
+}
+
+input,
+textarea,
+option,
+select {
+    font-family: "Galdeano", sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    line-height: 21px;
+    margin: 10px;
+}
+
+.fieldset-img2 {
+    background-image: url("/assets/img-retro.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: bottom;
+}
+
+.fieldset-img3 {
+    background-image: url("/assets/img-retro1.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: bottom;
+}
+
+#correo,
+#femenino {
+    margin-top: 10px;
+}
+
+.inputs-style {
+    width: 300px;
+    border-bottom: 1px dashed #875e46;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #f9f6ef;
+}
+
+.footer-div {
+    width: 550px;
+    background-color: #f9f6ef33;
+    padding: 20px 10px;
+    margin: auto;
+    font-size: 20px;
+    color: #f9f6ef;
+    text-align: center;
+}
+
+button {
+    background-color: #875e46;
+    padding: 10px 15px;
+    color: #f9f6ef;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px dashed #724b34;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.button-retro-style {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f9f6ef33;
+    max-width: 890px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+#selectTheme {
+    background-color: #f9f6ef;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px dashed #e5dec3;
+    color: #724b34;
+}
+
+.change-style {
+    background-color: #f9f6ef;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    min-width: 326px;
+}
+
+@media (max-width: 662px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    fieldset,
+    .footer-div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .fieldset-img2,
+    .fieldset-img3 {
+        background-size: 75%;
+    }
+
+    fieldset,
+    .footer-div {
+        width: 80%;
+    }
+
+    .inputs-style {
+        width: 250px;
+    }
+}

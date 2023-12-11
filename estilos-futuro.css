@@ -1,0 +1,226 @@
+/*  Paleta de colores
+
+#7a4160 bordo
+#4a4a4a gris oscuro
+gray gris
+lightgrey gris claro
+#ebece7 beige
+*/
+
+body {
+    background-image: url("/assets/background-01.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: 330px;
+    height: 41px;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    text-transform: uppercase;
+    color: #ebebeb;
+    padding-top: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+form {
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+legend {
+    text-align: right;
+    background-color: #ebece7;
+    padding: 10px 25px;
+    color: #4a4a4a;
+    font-size: 20px;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: 0.5s;
+    font-weight: 600;
+}
+
+legend::first-letter {
+    color: transparent;
+}
+
+fieldset:focus-within legend {
+    color: #7a4160;
+    font-size: 21px;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 7px 0px gray;
+    margin: 20px 0;
+    padding-inline-end: 0px;
+    margin-inline-end: 0px;
+    border-width: 0;
+}
+
+.fieldset-img1 {
+    background: url(/assets/gym1.jpg);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-color: #ebece7;
+    padding-bottom: 20px;
+    filter: grayscale(1);
+    transition-duration: 0.8s;
+}
+
+.fieldset-img2 {
+    background: url(/assets/gym2.jpg);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: #ebece7;
+    padding-bottom: 30px;
+    filter: grayscale(1);
+    transition-duration: 0.8s;
+}
+
+.fieldset-img3 {
+    background: url(/assets/gym3.jpg);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-color: #ebece7;
+    padding-bottom: 30px;
+    filter: grayscale(1);
+    transition-duration: 0.8s;
+}
+
+.fieldset-img1:focus-within,
+.fieldset-img2:focus-within,
+.fieldset-img3:focus-within {
+    filter: grayscale(0);
+}
+
+.main-div {
+    width: 60%;
+    padding: 10px 5px 10px 15px;
+}
+
+input,
+input::placeholder,
+select,
+option,
+textarea {
+    color: gray;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fieldset-img3 div {
+    padding: 10px 5px 10px 15px;
+}
+
+.center-label,
+.inputs-style {
+    display: block;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.inputs-style {
+    width: 90%;
+    padding: 10px 5px;
+    border: 1px solid #ebece7;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 0px lightgrey;
+    transition-duration: 0.5s;
+    outline-color: #7a4160;
+}
+
+.inputs-style:focus-visible {
+    outline-color: #7a4160;
+    background-color: lightgrey;
+}
+
+.footer-text,
+.footer-text2 {
+    color: white;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 10px;
+    align-items: center;
+}
+
+.button-div button {
+    background-color: #4a4a4a;
+    box-shadow: 1px 0px 11px 0px gray;
+    color: #ebece7;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: 2px solid #4a4a4a;
+    transition-duration: 0.5s;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ebece7;
+    color: gray;
+}
+
+.change-style {
+    background-color: #4a4a4a;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    min-width: 355px;
+    color: #ebece7;
+    text-align: center;
+}
+
+#selectTheme {
+    padding: 10px 20px;
+    border: 1px solid #ebece7;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 0px lightgrey;
+    outline-color: #7a4160;
+}
+
+@media (max-width: 600px) {
+    .fieldset-img1,
+    .fieldset-img2,
+    .fieldset-img3 {
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    fieldset,
+    label,
+    .center-label {
+        color: white;
+    }
+
+    legend {
+        color: #4a4a4a;
+        font-size: 20px;
+        padding: 5px 18px;
+    }
+
+    fieldset:focus-within legend {
+        color: white;
+        font-size: 18px;
+        background-color: #7a4160;
+    }
+}

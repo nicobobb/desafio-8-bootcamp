@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/estilos.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="button-div button-retro-style">
+            <button onclick="changeTheme()">Cambiar Tema</button>
+            <button onclick="changeThemeAleatory()">🎲</button>
+            <button id="buttonRemember" onclick="rememberTheme()">
+                Recordar
+            </button>
+            <select id="selectTheme">
+                <option value="0">Base</option>
+                <option value="1">Futurista</option>
+                <option value="2">Retro</option>
+                <option value="3">Sin estilos</option>
+            </select>
+
+            <div class="change-style">
+                <input checked id="base" type="radio" value="0" name="theme" />
+                <label for="base">Base</label>
+                <input id="futurista" type="radio" value="1" name="theme" />
+                <label for="futurista">Futurista</label>
+                <input id="retro" type="radio" value="2" name="theme" />
+                <label for="retro">Retro</label>
+                <input id="sinEstilos" type="radio" value="3" name="theme" />
+                <label for="sinEstilos">Sin estilos</label>
+            </div>
+        </div>
+        <h1>Vení al Gym! 💪🏼</h1>
+        <form action="">
+            <fieldset class="fieldset-img1">
+                <legend>
+                    🙋🏼‍♂️ <span>D</span>atos <span>P</span>ersonales 👀
+                </legend>
+                <div class="main-div">
+                    <label class="center-label" for="nombre" id=""
+                        >Nombre:*</label
+                    >
+                    <input
+                        class="inputs-style"
+                        type="text"
+                        name="Nombre"
+                        id="nombre"
+                        required
+                    />
+                </div>
+                <div class="main-div">
+                    <label class="center-label" for="apellido" id=""
+                        >Apellido:*</label
+                    >
+                    <input
+                        class="inputs-style"
+                        type="text"
+                        name="Apellido"
+                        id="apellido"
+                        required
+                    />
+                </div>
+                <div class="main-div">
+                    <label class="center-label" for="documento" id=""
+                        >Documento:*</label
+                    >
+                    <input
+                        class="inputs-style"
+                        type="text"
+                        name="Documento"
+                        id="documento"
+                        required
+                    />
+                </div>
+                <div class="main-div">
+                    <label class="center-label" for="nacionalidad" id=""
+                        >Nacionalidad:*</label
+                    >
+                    <select
+                        class="inputs-style"
+                        name="Nacionalidad"
+                        id="nacionalidad"
+                        required
+                    >
+                        <option value="">- Seleccionar -</option>
+                        <option value="">Argentina</option>
+                        <option value="">Brasileña</option>
+                        <option value="">Uruguaya</option>
+                        <option value="">Otra</option>
+                    </select>
+                </div>
+                <div class="main-div">
+                    <label class="center-label" for="sobrevos"
+                        >Contanos un poco de vos...</label
+                    >
+                    <textarea
+                        class="inputs-style"
+                        name="Sobre vos"
+                        id="sobrevos"
+                        cols="20"
+                        rows="2"
+                    ></textarea>
+                </div>
+                <div class="main-div">
+                    <label class="center-label">Sexo:*</label>
+                    <div class="text-center">
+                        <input
+                            type="radio"
+                            id="femenino"
+                            name="action"
+                            value=""
+                            checked
+                        /><label for="femenino">Femenino</label>
+                        <input
+                            type="radio"
+                            id="masculino"
+                            name="action"
+                            value=""
+                        /><label for="masculino">Masculino</label>
+                        <input
+                            type="radio"
+                            id="otro"
+                            name="action"
+                            value=""
+                        /><label for="otro">Otro</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot dot5"></span>
+                <span class="dot dot4"></span>
+                <span class="dot dot3"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot1"></span>
+            </div>
+            <fieldset class="fieldset-img2">
+                <legend>
+                    📱 <span>D</span>atos de <span>C</span>ontacto 📧
+                </legend>
+                <div class="main-div">
+                    <label class="center-label" for="telefono">Teléfono:</label>
+                    <input
+                        class="inputs-style"
+                        type="text"
+                        name="Teléfono"
+                        id="telefono"
+                        placeholder="Código de área y número"
+                        required
+                    />
+                </div>
+                <div class="main-div">
+                    <label class="center-label" for="correo"
+                        >Dirección de correo electrónico:*</label
+                    >
+                    <input
+                        class="inputs-style"
+                        type="email"
+                        name="Correo electrónico"
+                        id="correo"
+                        placeholder="Ej: mail@gmail.com"
+                        required
+                    />
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot dot5"></span>
+                <span class="dot dot4"></span>
+                <span class="dot dot3"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot1"></span>
+            </div>
+            <fieldset class="fieldset-img3">
+                <legend>🚴 <span>A</span>ctividades 🤸‍♂️</legend>
+                <div>
+                    <p>Por favor, indicá cuáles actividades te interesan.</p>
+                </div>
+                <div class="font-style">
+                    <p>Sede Palermo:</p>
+                    <div>
+                        <input type="checkbox" name="" id="basquet" />
+                        <label for="basquet">Básquet</label>
+
+                        <input type="checkbox" name="" id="boxeo" />
+                        <label for="boxeo">Boxeo</label>
+
+                        <input type="checkbox" name="" id="futbol" />
+                        <label for="futbol">Fútbol</label>
+
+                        <input type="checkbox" name="" id="tenis" />
+                        <label for="tenis">Tenis</label>
+                    </div>
+                </div>
+                <div class="font-style">
+                    <p>Sede Rosario:</p>
+                    <div>
+                        <input type="checkbox" name="" id="basquetRosario" />
+                        <label for="basquetRosario">Básquet</label>
+
+                        <input type="checkbox" name="" id="futbolRosario" />
+                        <label for="futbolRosario">Fútbol</label>
+
+                        <input type="checkbox" name="" id="rugby" />
+                        <label for="rugby">Rugby</label>
+
+                        <input type="checkbox" name="" id="voley" />
+                        <label for="voley">Voley</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="footer-div">
+                <div class="footer-text">
+                    <input type="checkbox" name="" id="condiciones" />
+                    <label for="condiciones">Acepto las condiciones*</label>
+                </div>
+                <div class="footer-text">
+                    <input type="checkbox" name="" id="novedades" checked />
+                    <label for="novedades">Deseo recibir novedades</label>
+                </div>
+                <div class="footer-text2">
+                    <p>*: campo obligatorio.</p>
+                </div>
+                <div class="button-div">
+                    <button type="submit">Iniciar afiliación</button>
+                    <button type="reset">Restablecer</button>
+                </div>
+            </div>
+        </form>
+        <script src="/script.js"></script>
+    </body>
+</html>
