@@ -79,6 +79,7 @@ function changeTheme() {
 
 function changeThemeAleatory() {
     activeLink = generateRandomNumber();
+    console.log(activeLink);
     updateOptions();
     if (activeRemember) {
         localStorage.setItem("theme", activeLink);
@@ -87,7 +88,7 @@ function changeThemeAleatory() {
 }
 
 function generateRandomNumber() {
-    return Math.floor(Math.random() * cssFiles.length);
+    return Math.floor(Math.random() * (cssFiles.length + 1));
 }
 
 function rememberTheme() {
